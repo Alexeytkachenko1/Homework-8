@@ -1,0 +1,30 @@
+.social{
+    &__list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    }
+    &__item{
+      margin-right: 10px;
+    }
+    &__link{
+      @extend %text-align;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      
+      &:hover{
+        background-color: $accent-color;
+      }
+    }
+    &__svg{
+      width: 20px;
+      height: 20px;
+      fill:$primary-gray-color;
+
+      .social__link:hover  &{
+        fill: $primary-white-color;
+      }
+    }
+  }
+  

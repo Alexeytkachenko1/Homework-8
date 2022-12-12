@@ -1,0 +1,22 @@
+//utils
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+//base
+@import "./base/common";
+@import "./base/container";
+
+// //components
+// @import "./components/modal-btn";
+// @import "./components/modal";
+// @import "./components/social__list";
+
+//layout
+@import "./layout/header";
+@import "./layout/filters";
+@import "./layout/footer";
+@import "./layout/examples";
+@import "./layout/mobile-menu";

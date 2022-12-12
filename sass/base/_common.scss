@@ -1,0 +1,30 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+  font-style: normal;
+}
+.disable-scroll{
+  overflow: hidden;
+  // padding-right: 17px;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}

@@ -1,0 +1,14 @@
+.modal-btn {
+    /* display: block;
+    margin: 0 auto; */
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    background: #2196f3;
+    min-width: 200px;
+    /* height: 50px; */
+    border-radius: 4px;
+    text-align: center;
+    @include font(700,14px,26px);
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+  }
