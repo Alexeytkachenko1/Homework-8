@@ -15,58 +15,60 @@
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
+
   <!--HEADER-->
   <header class="header">
     <div class="container">
-      <div class="logo-wrapper">
-        <a class="logo link" href="./Studiya.html" title="WebStudio">
-          <!-- <img src="/images/header/logo.svg" alt="Логотип компании" /> -->
-          <h2 class="logo__text header-logo__text"><span class="logo--web-color">Web</span>Studio</h2>
-        </a>
-        <button type="button" class="menu-button" aria-controls="menu-container" aria-expanded="false" data-menu-button="">
-          <svg class="menu-btn-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="mobile-open" href="./images/sprite.svg#mobile-open"></use>
-            <use class="mobile-close" href="./images/sprite.svg#mobile-close"></use>
-          </svg>
-        </button>
-      </div>
+      <div class="header__wrapper" >
+        <div class="logo-wrapper">
+          <a class="logo link" href="./Studiya.html" title="WebStudio">
+            <!-- <img src="/images/header/logo.svg" alt="Логотип компании" /> -->
+            <h2 class="logo__text header-logo__text"><span class="logo--web-color">Web</span>Studio</h2>
+          </a>
+          <button type="button" class="menu-button" aria-controls="menu-container" aria-expanded="false" data-menu-button="">
+            <svg class="menu-btn-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="mobile-open" href="./images/sprite.svg#mobile-open"></use>
+              <use class="mobile-close" href="./images/sprite.svg#mobile-close"></use>
+            </svg>
+          </button>
+        </div>
+  
+  <div class="header-menu__wrapper" id="menu-container" data-menu>
 
-      <div class="header__wrapper" id="menu-container" data-menu>
-        <div class="header-navigation__wrapper">
-          <nav class="navigation" >
-            <ul class="navigation__list list">
-              <li class="navigation__item">
-                <a class="navigation__link link navigation--current-page" href="./Studiya.html">Студия</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link link" href="./Portfolio.html">Портфолио</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="address-wrapper" >
-          <address class="header-address ">
-            <ul class="address__list list">
-              <li class="address__item address">
-                <a class="address__link link" href="mailto:info@devstudio.com"> <svg
-                    class="address__icon-envelope-svg" width="16" height="12">
-                    <use href="./images/sprite.svg#icon-envelope "></use>
-                  </svg>info@devstudio.com
-                </a>
-              </li>
-              <li class="address__item address">
-                <a class="address__link link" href="tel:+380961111111">
-                  <svg class="address__icon-smartphone-svg" width="10" height="16">
-                    <use href="./images/sprite.svg#icon-smartphone"></use>
-                  </svg>+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-      </div>
+  <nav class="header-navigation__wrapper"  >
+    <ul class="navigation__list list">
+      <li class="navigation__item">
+        <a class="navigation__link link navigation--current-page" href="./Studiya.html">Студия</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link link" href="./Portfolio.html">Портфолио</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link link" href="">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <address class="header-address__wrapper" >
+    <ul class="address__list list">
+      <li class="address__item address">
+        <a class="address__link link" href="mailto:info@devstudio.com"> <svg
+            class="address__icon-envelope-svg" width="16" height="12">
+            <use href="./images/sprite.svg#icon-envelope "></use>
+          </svg>info@devstudio.com
+        </a>
+      </li>
+      <li class="address__item address">
+        <a class="address__link link" href="tel:+380961111111">
+          <svg class="address__icon-smartphone-svg" width="10" height="16">
+            <use href="./images/sprite.svg#icon-smartphone"></use>
+          </svg>+38 096 111 11 11</a>
+      </li>
+    </ul>
+  </address>
+</div>
+</div>
     </div>
   </header>
   <main>
@@ -77,7 +79,7 @@
 
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <div class="hero__button-container">
-          <button class="modal-btn link list" type="button" data-open-modal href="">Заказать услугу </button>
+          <button class="modal-btn link list" type="button" data-open-modal >Заказать услугу </button>
         </div>
       </div>
     </section>
@@ -127,14 +129,7 @@
 </div>
 </div> 
 
-<!-- <div class="contact-form-wrapper">
 
-  <input id="contact-form-checkbox" type="checkbox" class="contact-form-checkbox"value="Соглашаюсь с рассылкой и принимаю Условия договора" required>
-  <label class="contact-form-policy-label" for="contact-form-checkbox">Соглашаюсь с рассылкой и принимаю<a class="contact-form-href" href="">Условия договора</a></label>
-</div>
-
- 
- 
     <!--PECULIARITIES -->
 
     <section class="peculiarities">
@@ -179,22 +174,37 @@
         <h2 class="working-process__title">Чем мы занимаемся</h2>
         <ul class="working-process__list list">
           <li class="working-process__item">
+            <picture>
+              <source srcset="./images/work/work-img-desktop-1.jpg 1x, ./images/work/work-img-desktop-1@2x.jpg 2x">
 
-            <img src="./images/work/img1.jpg" alt="Пишем код" width="370" />
+              <img src="./images/work/work-img-desktop-1.jpg" alt="Пишем код"  />
+            </picture>
+
+           
             <div class="working-process__container">
               <p class="working-process__description">Десктопные приложения</p>
             </div>
           </li>
 
           <li class="working-process__item">
-            <img src="./images/work/img2.jpg" alt="Разрабатываем дизайн" width="370" />
+            <picture>
+              <source srcset="./images/work/work-img-desktop-2.jpg 1x, ./images/work/work-img-desktop-2@2x.jpg 2x">
+
+              <img src="./images/work/work-img-desktop-2.jpg" alt="Разрабатываем дизайн"  />
+            </picture>
+            
             <div class="working-process__container">
               <p class="working-process__description">Мобильные приложения</p>
             </div>
           </li>
 
           <li class="working-process__item">
-            <img src="./images/work/img3.jpg" alt="Подбираем цвета" width="370" />
+            <picture>
+              <source srcset="./images/work/work-img-desktop-3.jpg 1x, ./images/work/work-img-desktop-3@2x.jpg 2x">
+
+              <img src="./images/work/work-img-desktop-3.jpg" alt="Подбираем цвета"  />
+            </picture>
+            
             <div class="working-process__container">
               <p class="working-process__description">Дизайнерские решения</p>
             </div>
@@ -205,14 +215,38 @@
 
     <!--OUR COMMAND-->
 
+
+    <!-- Отзывчивые изображения -->
+ 
+           <!-- <img
+            srcset="
+              ./img/cat-320.jpg   320w,
+              ./img/cat-640.jpg   640w,
+              ./img/cat-960.jpg   960w,
+              ./img/cat-1280.jpg 1280w,
+              ./img/cat-1920.jpg 1920w
+            "
+            src="./img/cat-320.jpg"
+            alt="Котик"
+            sizes="(min-width: 1440) 15vw, (min-width: 960px) 25vw, (min-width: 576px) 50vw, 100vw"
+          /> 
+    -->
+
     <section class="command">
       <div class="container">
         <h2 class="command__title">Наша команда</h2>
         <ul class="command__list list">
           <li class="command__item">
             <div class="dev__content">
+
               <picture>
-                <source src="./images/our_command/command-img-mobile-1.jpg 1x, ./images/our_command/command-img-mobile-1@2x.jpg 2x " media="(min-width:320px)">
+                <source srcset="./images/our_command/command-img-desktop-1.jpg 1x,
+                ./images/our_command/command-img-desktop-1@2x.jpg 2x"  media="(min-width:1200px)" >
+
+                <source srcset="./images/our_command/command-img-tablet-1.jpg 1x,
+                 ./images/our_command/command-img-tablet-1@2x.jpg 2x " media="(min-width:768px)">
+
+                <source srcset="./images/our_command/command-img-mobile-1.jpg 1x, ./images/our_command/command-img-mobile-1@2x.jpg 2x " media="(min-width:320px)">
 
                 <img class="dev__img" src="./images/our_command/command-img-mobile-1.jpg" alt="Николай Кучеренко"  />
               </picture>
@@ -252,7 +286,13 @@
           <li class="command__item">
             <div class="dev__content">
               <picture>
-                <source src="./images/our_command/command-img-mobile-2.jpg 1x, ./images/our_command/command-img-mobile-2@2x.jpg 2x " media="(min-width:320px)">
+                <source srcset="./images/our_command/command-img-desktop-2.jpg 1x,
+                ./images/our_command/command-img-desktop-2@2x.jpg 2x " media="(min-width:1200px)" >
+
+                <source srcset="./images/our_command/command-img-tablet-2.jpg 1x,
+                 ./images/our_command/command-img-tablet-2@2x.jpg 2x " media="(min-width:768px)">
+
+                <source srcset="./images/our_command/command-img-mobile-2.jpg 1x, ./images/our_command/command-img-mobile-2@2x.jpg 2x " media="(min-width:320px)">
 
                 
                 <img class="dev__img" src="./images/our_command/command-img-mobile-2.jpg" alt="Ольга Иванова"  />
@@ -294,7 +334,13 @@
           <li class="command__item">
             <div class="dev__content">
               <picture>
-                <source src="./images/our_command/command-img-mobile-3.jpg 1x, ./images/our_command/command-img-mobile-3@2x.jpg 2x " media="(min-width:320px)">
+                <source srcset="./images/our_command/command-img-desktop-3.jpg 1x,
+                ./images/our_command/command-img-desktop-3@2x.jpg 2x " media="(min-width:1200px)">
+
+                <source srcset="./images/our_command/command-img-tablet-3.jpg 1x,
+                 ./images/our_command/command-img-tablet-3@2x.jpg 2x " media="(min-width:768px)">
+
+                <source srcset="./images/our_command/command-img-mobile-3.jpg 1x, ./images/our_command/command-img-mobile-3@2x.jpg 2x " media="(min-width:320px)">
 
 
                 <img class="dev__img" src="./images/our_command/command-img-mobile-3.jpg" alt="Андрей Шевченко"  />
@@ -336,7 +382,13 @@
           <li class="command__item">
             <div class="dev__content">
               <picture>
-                <source src="./images/our_command/command-img-mobile-4.jpg 1x, ./images/our_command/command-img-mobile-4@2x.jpg 2x " media="(min-width:320px)">
+                <source srcset="./images/our_command/command-img-desktop-4.jpg 1x,
+                ./images/our_command/command-img-desktop-4@2x.jpg 2x " media="(min-width:1200px)">
+
+                <source srcset="./images/our_command/command-img-tablet-4.jpg 1x,
+                 ./images/our_command/command-img-tablet-4@2x.jpg 2x " media="(min-width:768px)">
+
+                <source srcset="./images/our_command/command-img-mobile-4.jpg 1x, ./images/our_command/command-img-mobile-4@2x.jpg 2x " media="(min-width:320px)">
 
 
                 <img class="dev__img" src="./images/our_command/command-img-mobile-4.jpg" alt="Иван Николаев"  />
@@ -421,56 +473,60 @@
   
   <footer class="footer">
     <div class="container footer__wrapper">
-      <div class="footer__contacts">
-        <a class="logo  link" href="./Studiya.html" title="WebStudio">
-         
-          <h2 class="logo-text footer-logo__text"><span class="logo--web-color">Web</span>Studio</h2>
-        </a>
-        <address class="footer__address">
-          <a class="footer__address-title address link" href="https://goo.gl/maps/WqVVXLJzZxcWhVTe7" target="_blank">г. Киев,
-            пр-т Леси Украинки, 26</a>
-          <ul class="footer-contact__list list">
-            <li class="footer-contact__item">
-              <a class="footer-contact__title address link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="footer-contact__item">
-              <a class="footer-contact__title address link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+      <div class="footer-contacts-join_wrapper">
 
-      <section class="join">
-        <div class="join__wrapper">
-          <h2 class="join__header">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="join__list list">
-            <li class="join__title">
-              <a class="join__link" href="https://www.instagram.com/" target="_blank"
-                aria-label="Ссылка на Instagram"><svg class="join__svg">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg></a>
-            </li>
-            <li class="join__title">
-              <a class="join__link" href="" target="_blank" aria-label="Ссылка на Twitter"><svg
-                  class="join__svg">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg></a>
-            </li>
-            <li class="join__title">
-              <a class="join__link" href="" target="_blank" aria-label="Ссылка на Facebook"><svg
-                  class="join__svg">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg></a>
-            </li>
-            <li class="join__title">
-              <a class="join__link" href="" target="_blank" aria-label="Ссылка на LinkedIn"><svg
-                  class="join__svg">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg></a>
-            </li>
-          </ul>
+
+        <div class="footer__contacts">
+          <a class="logo  link" href="./Studiya.html" title="WebStudio">
+           
+            <h2 class="logo-text footer-logo__text"><span class="logo--web-color">Web</span>Studio</h2>
+          </a>
+          <address class="footer__address">
+            <a class="footer__address-title address link" href="https://goo.gl/maps/WqVVXLJzZxcWhVTe7" target="_blank">г. Киев,
+              пр-т Леси Украинки, 26</a>
+            <ul class="footer-contact__list list">
+              <li class="footer-contact__item">
+                <a class="footer-contact__title address link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-contact__item">
+                <a class="footer-contact__title address link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
         </div>
-      </section>
+  
+        <section class="join">
+          <div class="join__wrapper">
+            <h2 class="join__header">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="join__list list">
+              <li class="join__title">
+                <a class="join__link" href="https://www.instagram.com/" target="_blank"
+                  aria-label="Ссылка на Instagram"><svg class="join__svg">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg></a>
+              </li>
+              <li class="join__title">
+                <a class="join__link" href="" target="_blank" aria-label="Ссылка на Twitter"><svg
+                    class="join__svg">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg></a>
+              </li>
+              <li class="join__title">
+                <a class="join__link" href="" target="_blank" aria-label="Ссылка на Facebook"><svg
+                    class="join__svg">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg></a>
+              </li>
+              <li class="join__title">
+                <a class="join__link" href="" target="_blank" aria-label="Ссылка на LinkedIn"><svg
+                    class="join__svg">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <div class="footer-subscribe">
         <h3 class="footer-subscribe__title">Подпишитесь на рассылку</h3>
         <form action="#" method="get" class="footer-subscribe__contact-form">

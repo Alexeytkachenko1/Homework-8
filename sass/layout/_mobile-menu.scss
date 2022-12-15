@@ -32,9 +32,10 @@ justify-content: flex-end;
       }
       
 
-  .header__wrapper{
+  // .header__wrapper{
+  //   display: none;
+  .header-menu__wrapper{
     display: none;
-   
  &.is-open{
   border: 1px solid #ECECEC;
     padding-top: 60px;
@@ -89,10 +90,13 @@ justify-content: flex-end;
         }
         }
       
-     .header-address{
+   .header-address__wrapper{
+  
       margin-top: 60px;
      } 
+   
 .address{
+ 
  &__item:not(:first-child){
   margin-top: 16px;
 }

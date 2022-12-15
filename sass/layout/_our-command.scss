@@ -19,7 +19,10 @@
         }
         &__item{
           margin-bottom: 30px;
-         
+          &:hover,
+          &:focus{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          }
         }
       }
     .dev{
@@ -57,50 +60,127 @@
     
   }
   
+ // ==============768===========//
+ @media screen and (min-width:768px) and (max-width:1199px) {
 
-  // .command {
-    //     padding-top: 94px;
-    //     padding-bottom: 94px;
-    //     background-color: #F5F4FA;
+  .command {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #F5F4FA;
       
-    //     &__list{
-    //       display: flex;
-    //       justify-content: space-between;
-    //     }
-    //     &__title {
-    //       @include font(700,36px,42px);
-    //       text-align: center;
-    //       letter-spacing: 0.03em;
+        &__list{
+          display: flex;
+         flex-wrap: wrap;
+         margin: -15px;
+         
+        }
+        &__item{
         
-    //       color: $title-text-color;
-    //       margin-bottom: 50px;
-    //     }
-    //   }
-    // .dev{
+          margin: 15px;
+          &:hover,
+          &:focus{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          }
+          
+        }
+        &__title {
+          @include font(700,28px,33px);
+          text-align: center;
+          letter-spacing: 0.03em;
+        
+          color: $title-text-color;
+          margin-bottom: 30px;
+        }
+      }
+    .dev{
     
-    //   &__content {
-    //     text-align: center;
-    //     background-color: #fff;
+      &__content {
+        text-align: center;
+        background-color: #fff;
       
-    //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    //   border-radius: 0px 0px 4px 4px;
-    //   }
-    //   &__name {
-    //       padding-top: 30px;
-    //       @include font(500,16px,19px);
-    //     text-align: center;
-    //     letter-spacing: 0.03em;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      }
+      &__img{
+        display: block;
+     max-width: 100%;
+     height: auto;
+      }
+      &__name {
+          padding-top: 30px;
+          @include font(500,16px,19px);
+        text-align: center;
+        letter-spacing: 0.03em;
       
-    //     color: $title-text-color;
-    //     margin-bottom: 10px;
-    //   }
-    //   &__position {
-    //     @include font(400,16px,19px);
-    //     text-align: center;
-    //     letter-spacing: 0.03em;
+        color: $title-text-color;
+        margin-bottom: 10px;
+      }
+      &__position {
+        @include font(400,16px,19px);
+        text-align: center;
+        letter-spacing: 0.03em;
       
-    //     color: $primary-text-color;
-    //     margin-bottom: 16px;
+        color: $primary-text-color;
+        margin-bottom: 16px;
        
-    //   }
-    // }
+      }
+    }
+  }
+
+  // ==============1200===========//
+ @media screen and (min-width:1200px)  {
+
+  .command {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background-color: #F5F4FA;
+      
+        &__list{
+          display: flex;
+          justify-content: space-between;
+        }
+        &__item{
+        
+          &:hover,
+          &:focus{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          }
+        &__title {
+          @include font(700,36px,42px);
+          text-align: center;
+          letter-spacing: 0.03em;
+        
+          color: $title-text-color;
+          margin-bottom: 50px;
+        }
+      }
+    .dev{
+    
+      &__content {
+        text-align: center;
+        background-color: #fff;
+      
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      }
+      &__name {
+          padding-top: 30px;
+          @include font(500,16px,19px);
+        text-align: center;
+        letter-spacing: 0.03em;
+      
+        color: $title-text-color;
+        margin-bottom: 10px;
+      }
+      &__position {
+        @include font(400,16px,19px);
+        text-align: center;
+        letter-spacing: 0.03em;
+      
+        color: $primary-text-color;
+        margin-bottom: 16px;
+       
+      }
+    }
+  }
+ }
